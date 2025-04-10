@@ -20,8 +20,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/casbin/casbin/v2/model"
-	"github.com/casbin/casbin/v2/persist"
+	"github.com/ApicaSystem/casbin/v2/model"
+	"github.com/ApicaSystem/casbin/v2/persist"
 	"github.com/lib/pq"
 	"github.com/xorm-io/xorm"
 )
