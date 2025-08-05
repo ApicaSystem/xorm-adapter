@@ -37,12 +37,12 @@ func (the *CasbinRule) TableName() string {
 type CasbinRule struct {
 	Id    int64  `xorm:"pk autoincr"`
 	Ptype string `xorm:"varchar(100) index not null default ''"`
-	V0    string `xorm:"varchar(100) index not null default ''"`
-	V1    string `xorm:"varchar(100) index not null default ''"`
-	V2    string `xorm:"varchar(100) index not null default ''"`
-	V3    string `xorm:"varchar(100) index not null default ''"`
-	V4    string `xorm:"varchar(100) index not null default ''"`
-	V5    string `xorm:"varchar(100) index not null default ''"`
+	V0    string `xorm:"text index not null default ''"`
+	V1    string `xorm:"text index not null default ''"`
+	V2    string `xorm:"text index not null default ''"`
+	V3    string `xorm:"text index not null default ''"`
+	V4    string `xorm:"text index not null default ''"`
+	V5    string `xorm:"text index not null default ''"`
 
 	tableName string `xorm:"-"`
 }
